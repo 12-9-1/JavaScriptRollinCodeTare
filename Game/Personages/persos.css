@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-fondo img{
+    position: relative;
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+.contenedor-logo img {
+    position: absolute; /* Posición absoluta con respecto al contenedor padre */
+    top: 20px; /* Distancia desde la parte superior del contenedor padre */
+    left: 20px; /* Distancia desde el lado izquierdo del contenedor padre */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fdfdfd;
+    z-index: 1; /
+
+}
+button{
+    position: fixed;
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #4d048a,
+        rgb(7, 250, 88),
+        #dff707 
+    );
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+  }
+  button span{
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+  }
+  button:hover span{
+    background: none;
+  }
+  button:active{
+    transform: scale(0.9);
+  
+  }
+
+.enlace-imagen {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #333; /* Color del texto del enlace */
+    display: inline-block; /* Muestra los elementos en línea con bloque */
+    margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.enlace-imagen img {
+    width: 200px; /* Ancho de la imagen */
+    height: 300px; /* Alto de la imagen */
+}
+
+.enlace-imagen:hover {
+    color: #007bff; /* Cambia el color del texto del enlace al pasar el mouse por encima */
+}
+
